@@ -1,0 +1,150 @@
+.navbar {
+  box-sizing: border-box;
+  width: 1920px;
+  height: 182px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 140px 20px 140px;
+  background-color: #133009;
+  overflow: auto;
+  z-index: 1;
+  align-content: center;
+  flex-wrap: nowrap;
+  border-radius: 0px 0px 0px 0px;
+}
+.img {
+  width: 87px;
+  height: 86px;
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+  background-image: url(https://framerusercontent.com/images/ZyJOPDAUxIdwormCYzSIXP2yUIE.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0px 0px 0px 0px;
+}
+.logo p {
+  margin: 0;
+  width: 333px;
+  height: 65px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  z-index: 1;
+  font-family: "Gilroy-Bold ", "Gilroy-Bold  Placeholder", sans-serif;
+  color: #ffffff;
+  font-size: 60px;
+  letter-spacing: 0em;
+  line-height: 1.2;
+}
+.logo {
+  position: relative;
+  top: 55px;
+  right: 1216px;
+  bottom: 35px;
+  left: 140px;
+  width: 564px;
+  height: 91px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 10;
+  position: absolute;
+  border-radius: 0px 0px 0px 0px;
+}
+.stack {
+  width: 728px;
+  height: 74px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 93px;
+  position: absolute;
+  top: 64px;
+  right: 140px;
+  bottom: 44px;
+  left: 1052px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.home {
+  margin-top: 22px;
+  width: auto;
+  height: auto;
+  white-space: pre;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Poppins Placeholder", sans-serif;
+  color: var(--pure_white, #ffffff);
+  font-size: 25px;
+  letter-spacing: 0em;
+}
+
+.project {
+  margin-top: 22px;
+  width: auto;
+  height: auto;
+  white-space: pre;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Poppins Placeholder", sans-serif;
+  color: var(--pure_white, #ffffff);
+  font-size: 25px;
+  letter-spacing: 0em;
+  line-height: 1.2;
+}
+.about {
+  margin-top: 22px;
+  width: auto;
+  height: auto;
+  white-space: pre;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Poppins Placeholder", sans-serif;
+  color: var(--pure_white, #ffffff);
+  font-size: 25px;
+  letter-spacing: 0em;
+  line-height: 1.2;
+}
+.connectButton {
+  width: 207px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 10;
+  border-radius: 16px;
+}
+.connectButton p {
+  width: auto;
+  height: auto;
+  white-space: pre;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+  color: #000000;
+  font-size: 25px;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  position: absolute;
+}
