@@ -6,7 +6,7 @@ import Container from "./components/accordian/Container";
 
 function App() {
   return (
-    <div>
+    <div className={styles.outer}>
       <Navbar />
       <div className={styles.intro}>
         <p>Decarbonn your business by investing in carbon offset projects.</p>
@@ -14,12 +14,14 @@ function App() {
       <div className={styles.search}>
         <p>we search India for climate project with the highest impact</p>
       </div>
+      <div className={styles.buttons}>
       <button className={styles.connect2}>
         <p>CONNECT.</p>
       </button>
       <button className={styles.getintouch}>
         <p>GET IN TOUCH</p>
       </button>
+      </div>
       <div
         className={styles.fake}
         data-framer-background-image-wrapper="true"
