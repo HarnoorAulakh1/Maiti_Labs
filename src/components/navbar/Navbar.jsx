@@ -7,12 +7,15 @@ function Navbar() {
         <div className={styles.img}></div>
         <p>DeCarbonn</p>
       </div>
+      <button className={styles.menu}>
+        Menu
+      </button>
       <div className={styles.stack}>
         <p className={styles.home}>Home</p>
         <p className={styles.project}>Projects</p>
         <p className={styles.about}>About</p>
         <button className={styles.connectButton}>
-            <p>Connect →</p>
+          <p>Connect →</p>
         </button>
       </div>
     </div>

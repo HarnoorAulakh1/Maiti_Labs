@@ -1,7 +1,7 @@
 .navbar {
   box-sizing: border-box;
-  width: 1920px;
-  height: 182px;
+  width: 100%;
+  height: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,11 +12,12 @@
   z-index: 1;
   align-content: center;
   flex-wrap: nowrap;
+  position: relative;
   border-radius: 0px 0px 0px 0px;
 }
 .img {
-  width: 87px;
-  height: 86px;
+  width: 2.5rem;
+  height: 2.5rem;
   display: block;
   overflow: hidden;
   z-index: 1;
@@ -28,26 +29,21 @@
 }
 .logo p {
   margin: 0;
-  width: 333px;
-  height: 65px;
+  width: max-content;
+  height: 3rem;
   white-space: pre-wrap;
   word-wrap: break-word;
   word-break: break-word;
   z-index: 1;
   font-family: "Gilroy-Bold ", "Gilroy-Bold  Placeholder", sans-serif;
   color: #ffffff;
-  font-size: 60px;
+  font-size: 2rem;
   letter-spacing: 0em;
   line-height: 1.2;
 }
 .logo {
-  position: relative;
-  top: 55px;
-  right: 1216px;
-  bottom: 35px;
-  left: 140px;
-  width: 564px;
-  height: 91px;
+  width: 20rem;
+  height: max-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -56,13 +52,14 @@
   padding: 0px 0px 0px 0px;
   align-content: center;
   flex-wrap: nowrap;
-  gap: 10;
+  gap: .5rem;
   position: absolute;
+  left: 1rem;
   border-radius: 0px 0px 0px 0px;
 }
 .stack {
-  width: 728px;
-  height: 74px;
+  width: 35rem;
+  height: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -71,17 +68,13 @@
   padding: 0px 0px 0px 0px;
   align-content: center;
   flex-wrap: nowrap;
-  gap: 93px;
+  gap: 4rem;
   position: absolute;
-  top: 64px;
-  right: 140px;
-  bottom: 44px;
-  left: 1052px;
+  right: 1rem;
   border-radius: 0px 0px 0px 0px;
 }
 
 .home {
-  margin-top: 22px;
   width: auto;
   height: auto;
   white-space: pre;
@@ -89,12 +82,11 @@
   font-style: normal;
   font-family: "Poppins", "Poppins Placeholder", sans-serif;
   color: var(--pure_white, #ffffff);
-  font-size: 25px;
+  font-size: 1rem;
   letter-spacing: 0em;
 }
 
 .project {
-  margin-top: 22px;
   width: auto;
   height: auto;
   white-space: pre;
@@ -102,12 +94,11 @@
   font-style: normal;
   font-family: "Poppins", "Poppins Placeholder", sans-serif;
   color: var(--pure_white, #ffffff);
-  font-size: 25px;
+  font-size: 1rem;
   letter-spacing: 0em;
   line-height: 1.2;
 }
 .about {
-  margin-top: 22px;
   width: auto;
   height: auto;
   white-space: pre;
@@ -115,13 +106,13 @@
   font-style: normal;
   font-family: "Poppins", "Poppins Placeholder", sans-serif;
   color: var(--pure_white, #ffffff);
-  font-size: 25px;
+  font-size: 1rem;
   letter-spacing: 0em;
   line-height: 1.2;
 }
 .connectButton {
-  width: 207px;
-  height: 75px;
+  width:8rem;
+  height: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,7 +123,6 @@
   padding: 0px 0px 0px 0px;
   align-content: center;
   flex-wrap: nowrap;
-  gap: 10;
   border-radius: 16px;
 }
 .connectButton p {
@@ -143,8 +133,30 @@
   font-style: normal;
   font-family: "Inter", "Inter Placeholder", sans-serif;
   color: #000000;
-  font-size: 25px;
+  font-size: 1rem;
   letter-spacing: 0em;
   line-height: 1.2;
   position: absolute;
+}
+
+.menu{
+  display: none;
+}
+
+
+@media screen and (max-width: 830px) {
+  .stack {
+    display: none;
+  }
+  .menu{
+    display: block;
+    width: 5rem;
+    height: 1.5rem;
+    position: absolute;
+    right: 0;
+    border: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #133009;
+  }
 }

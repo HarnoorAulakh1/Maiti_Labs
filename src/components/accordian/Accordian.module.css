@@ -1,19 +1,17 @@
 .container {
-  width: 1920px;
-  height: 531px;
+  width: 100%;
+  height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   overflow: visible;
   z-index: 1;
+  gap: 4rem;
   padding: 0px 0px 0px 0px;
   align-content: center;
   flex-wrap: nowrap;
-  gap: 88px;
   border-radius: 0px 0px 0px 0px;
-  position: absolute;
-  top: 5200px;
 }
 
 .header {
@@ -24,57 +22,47 @@
   font-style: normal;
   font-family: "Inter Tight", "Inter Tight Placeholder", sans-serif;
   color: #000000;
-  font-size: 67px;
+  font-size:3rem;
   letter-spacing: 0em;
   line-height: 1.2;
   text-align: center;
-  position: absolute;
 }
 
 .questions {
-  width: 1325px;
+  width: 90%;
   height: min-content;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   overflow: visible;
   padding: 0px 0px 0px 0px;
   align-content: flex-start;
   flex-wrap: nowrap;
-  gap: 30px;
-  position: absolute;
-  top: 169px;
-  left: 298px;
-  right: 298px;
+  gap: 1rem;
   border-radius: 0px 0px 0px 0px;
 }
 
 
 .heading {
-  width: 1327px;
-  height: 88px;
+  width: 100%;
+  height: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.12);
   background-color: #ffffff;
   overflow: hidden;
   padding: 0px 0px 0px 0px;
   align-content: flex-start;
   flex-wrap: nowrap;
-  gap: 0;
-  position: absolute;
+  gap: 20rem;
   border-radius: 8px;
   border: 1px solid #d3d3d3;
   position: relative;
 }
 .text {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  right: 970px;
   width: auto;
   height: auto;
   white-space: pre;
@@ -85,12 +73,34 @@
   font-size: 24px;
   letter-spacing: 0em;
   line-height: 1.2;
-  position: absolute;
 }
 .arrow {
   position: absolute;
-  left: 1273px;
-  top: 37px;
+  right: 0;
   width: 24px;
   height: 14px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+  .questions {
+    width: 90%;
+  }
+  .heading {
+    width: 100%;
+    gap: 1rem;
+    height: 3rem;
+  }
+  .text{
+    width: 90%;
+    font-size: 1rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+    white-space: pre-wrap;
+  }
+  .container {
+    gap: 2rem;
+  }
 }

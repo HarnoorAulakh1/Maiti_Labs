@@ -1,15 +1,22 @@
 body {
   margin: 0;
   height: 100%;
-  width: 1920px;
-}
-html {
-  height: 100%;
-  width: 1920px;
+  width: 100%;
 }
 
+.outer{
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  overflow: hidden;
+}
+
+
 .intro {
-  width: 1151px;
+  width: 60%;
   height: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -17,18 +24,14 @@ html {
   z-index: 1;
   font-family: "Gilroy-Bold ", "Gilroy-Bold  Placeholder", sans-serif;
   color: #000000;
-  font-size: 70px;
+  font-size: 2.5em;
+  font-weight: 700;
   letter-spacing: 0em;
   line-height: 1.4;
   text-align: center;
-  position: absolute;
-  top: 343px;
-  right: 398px;
-  left: 371px;
 }
 .search {
-  width: 848px;
-  height: 46px;
+  width: 80%;
   white-space: pre-wrap;
   word-wrap: break-word;
   word-break: break-word;
@@ -36,17 +39,13 @@ html {
   font-style: normal;
   font-family: "Inter", sans-serif;
   color: #333333;
-  font-size: 28px;
+  font-size: 150%;
   letter-spacing: 0em;
   line-height: 1.4;
-  position: absolute;
-  top: 588px;
-  right: 535px;
-  left: 537px;
+  text-align: center;
 }
 .connect2 {
-  width: 275px;
-  height: 76px;
+  width: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,17 +56,16 @@ html {
   padding: 0px 0px 0px 0px;
   align-content: center;
   flex-wrap: nowrap;
-  gap: 10;
   border-radius: 16px;
-  position: absolute;
-  top: 704px;
-  right: 1033px;
-  left: 612px;
 }
-
+.buttons{
+  display: flex;
+  gap: 4rem;
+  flex-direction: row;
+}
 .getintouch {
   box-sizing: border-box;
-  width: 295px;
+  width: 10rem;
   height: 78px;
   display: flex;
   flex-direction: column;
@@ -82,10 +80,6 @@ html {
   gap: 10;
   border-radius: 16px;
   border: 2px solid #000000;
-  position: absolute;
-  top: 702px;
-  right: 634px;
-  left: 991px;
 }
 .connect2 p {
   width: auto;
@@ -95,7 +89,7 @@ html {
   font-style: normal;
   font-family: "Inter", "Inter Placeholder", sans-serif;
   color: var(--pure_white, #ffffff);
-  font-size: 25px;
+  font-size: 1.2rem;
   letter-spacing: 0em;
   line-height: 1.2;
   position: absolute;
@@ -109,23 +103,19 @@ html {
   font-style: normal;
   font-family: "Inter", "Inter Placeholder", sans-serif;
   color: var(--dark_green, #133009);
-  font-size: 25px;
+  font-size: 1.2rem;
   letter-spacing: 0em;
   line-height: 1.2;
   position: absolute;
 }
 
 .fake {
-  width: 1711px;
-  height: 699px;
+  width: 80%;
+  height: 30rem;
   display: block;
   overflow: hidden;
   z-index: 1;
   border-radius: 16px;
-  position: absolute;
-  top: 894px;
-  right: 110px;
-  left: 100px;
   background: repeating-linear-gradient(
     45deg,
     /* Adjusted angle to 45 degrees */ rgba(180, 180, 180, 0.8) 0px,
@@ -135,11 +125,7 @@ html {
   );
 }
 .goal {
-  position: absolute;
-  top: 1770px;
-  right: 465px;
-  left: 465px;
-  width: 990px;
+  width: max-content;
   height: 71px;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -147,9 +133,43 @@ html {
   z-index: 1;
   font-family: "Gilroy-Bold ", "Gilroy-Bold  Placeholder", sans-serif;
   color: #333333;
-  font-size: 44px;
+  font-size: 2rem;
+  font-weight: 400;
   letter-spacing: 0em;
   line-height: 1.4;
 }
 
 
+@media screen and (max-width: 768px) {
+  .intro {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .outer{
+    gap: 3rem;
+  }
+  .search {
+    font-size: .8rem;
+  }
+  .getintouch p {
+    font-size: 1em;
+  }
+  .connect2 p {
+    font-size: 1em;
+  }
+  .connect2{
+    width: 8rem;
+    height:4rem;
+  }
+  .getintouch{
+    width: 8rem;
+    height:4rem;
+  }
+  .fake{
+    height: 20rem;
+  }
+  .goal {
+    font-size: 1rem;
+  }
+  
+}
