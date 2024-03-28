@@ -15,7 +15,7 @@ function App() {
         <p>we search India for climate project with the highest impact</p>
       </div>
       <button className={styles.connect2}>
-        <p>CONNECT</p>
+        <p>CONNECT.</p>
       </button>
       <button className={styles.getintouch}>
         <p>GET IN TOUCH</p>
