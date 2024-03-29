@@ -159,9 +159,11 @@ body {
   }
   .getintouch p {
     font-size: .6em;
+    font-weight: 100;
   }
   .connect2 p {
     font-size: .6em;
+    font-weight: 100;
   }
   .connect2{
     width: 10rem;
