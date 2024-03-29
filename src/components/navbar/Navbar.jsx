@@ -11,11 +11,11 @@ function Navbar() {
         Menu
       </button>
       <div className={styles.stack}>
-        <p className={styles.home}>Home</p>
-        <p className={styles.project}>Projects</p>
-        <p className={styles.about}>About</p>
+        <p className={styles.links}>Home</p>
+        <p className={styles.links}>Projects</p>
+        <p className={styles.links}>About</p>
         <button className={styles.connectButton}>
-          <p>Connect →</p>
+          <p className={styles.connectText}>Connect →</p>
         </button>
       </div>
     </div>

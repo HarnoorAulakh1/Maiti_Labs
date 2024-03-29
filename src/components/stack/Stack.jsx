@@ -3,6 +3,7 @@ import styles from "./Stack.module.css";
 function Stack() {
   return (
     <div className={styles.stackMain}>
+      <p className={styles.goal}>Our goal is to simplify & enhance climate action.</p>
       <div className={styles.flex}>
         <div className={styles.frame1}></div>
         <Content

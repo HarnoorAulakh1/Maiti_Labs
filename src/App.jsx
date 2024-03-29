@@ -26,7 +26,6 @@ function App() {
         className={styles.fake}
         data-framer-background-image-wrapper="true"
       ></div>
-      <p className={styles.goal}>Our goal is to simplify & enhance climate action.</p>
       <Stack />
       <Frame />
       <Container/>
