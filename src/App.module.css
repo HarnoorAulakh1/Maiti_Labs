@@ -56,10 +56,12 @@ body {
   transition: 0.5s;
 }
 .getintouch:hover {
-  font-size: 1.5rem;
   background-color: #133009;
   color: #ffffff;
+  font-size: 1.5rem;
   transition: 0.5s;
+}
+.getintouch:hover p{
   font-weight: 100;
 }
 .connect2 {
