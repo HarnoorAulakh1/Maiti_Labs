@@ -35,6 +35,8 @@
   word-wrap: break-word;
   word-break: break-word;
   z-index: 1;
+  display: flex;
+  align-items: center;
   font-family: "Gilroy-Bold ", "Gilroy-Bold  Placeholder", sans-serif;
   color: #ffffff;
   font-size: 2rem;
@@ -42,7 +44,7 @@
   line-height: 1.2;
 }
 .logo {
-  width: 20rem;
+  width: max-content;
   height: max-content;
   display: flex;
   flex-direction: row;
@@ -52,14 +54,14 @@
   padding: 0px 0px 0px 0px;
   align-content: center;
   flex-wrap: nowrap;
-  gap: .5rem;
+  gap: .2rem;
   position: absolute;
-  left: 1rem;
+  left: 5rem;
+  top: 1rem;
   border-radius: 0px 0px 0px 0px;
 }
 .stack {
-  width: 35rem;
-  height: 3rem;
+  width: max-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -68,49 +70,32 @@
   padding: 0px 0px 0px 0px;
   align-content: center;
   flex-wrap: nowrap;
-  gap: 4rem;
   position: absolute;
-  right: 1rem;
+  right: 2rem;
+  top: 1rem;
+  gap: 5rem;
   border-radius: 0px 0px 0px 0px;
 }
 
-.home {
-  width: auto;
-  height: auto;
+.links {
+  width: max-content;
+  height: 1.5rem;
   white-space: pre;
   font-weight: 400;
   font-style: normal;
   font-family: "Poppins", "Poppins Placeholder", sans-serif;
   color: var(--pure_white, #ffffff);
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 0em;
+}
+.links:hover {
+  color: #b5aeae;
+  transition: .2s;
+  height: 2rem;
 }
 
-.project {
-  width: auto;
-  height: auto;
-  white-space: pre;
-  font-weight: 400;
-  font-style: normal;
-  font-family: "Poppins", "Poppins Placeholder", sans-serif;
-  color: var(--pure_white, #ffffff);
-  font-size: 1rem;
-  letter-spacing: 0em;
-  line-height: 1.2;
-}
-.about {
-  width: auto;
-  height: auto;
-  white-space: pre;
-  font-weight: 400;
-  font-style: normal;
-  font-family: "Poppins", "Poppins Placeholder", sans-serif;
-  color: var(--pure_white, #ffffff);
-  font-size: 1rem;
-  letter-spacing: 0em;
-  line-height: 1.2;
-}
 .connectButton {
+  border: 0;
   width:8rem;
   height: 3rem;
   display: flex;
@@ -122,21 +107,36 @@
   overflow: hidden;
   padding: 0px 0px 0px 0px;
   align-content: center;
+  color: black;
   flex-wrap: nowrap;
   border-radius: 16px;
 }
-.connectButton p {
-  width: auto;
-  height: auto;
+
+.connectButton:hover {
+  background-color: #879f81;
+  color: white;
+  transition: .2s;
+}
+
+.connectText:hover {
+  color: white;
+  transition: .2s;
+  height: 1.5rem;
+  transition: .2s;
+  height: 100%;
+}
+
+.connectText {
+  height: 100%;
   white-space: pre;
   font-weight: 700;
   font-style: normal;
   font-family: "Inter", "Inter Placeholder", sans-serif;
-  color: #000000;
   font-size: 1rem;
   letter-spacing: 0em;
   line-height: 1.2;
-  position: absolute;
+  display: flex;
+  align-items: center;
 }
 
 .menu{
@@ -151,12 +151,17 @@
   .menu{
     display: block;
     width: 5rem;
-    height: 1.5rem;
+    height: max-content;
     position: absolute;
-    right: 0;
+    right: 1rem;
     border: 0;
     font-size: 1.5rem;
     color: #ffffff;
     background-color: #133009;
+    position: absolute;
+    top: 1.7rem;
+  }
+  .logo{
+    left: 1rem;
   }
 }

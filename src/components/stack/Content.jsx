@@ -10,7 +10,7 @@ function Content({ p1, p2, btn }) {
         ""
       ) : (
         <button className={styles.button1}>
-          <p>{btn}</p>
+          <p className={styles.btn}>{btn}</p>
         </button>
       )}
     </div>

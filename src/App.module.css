@@ -16,7 +16,7 @@ body {
 
 
 .intro {
-  width: 60%;
+  width: 70%;
   height: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -44,8 +44,28 @@ body {
   line-height: 1.4;
   text-align: center;
 }
+.buttons{
+  display: flex;
+  gap: 4rem;
+  flex-direction: row;
+}
+.connect2:hover {
+  background-color: #ffffff;
+  color: #133009;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.getintouch:hover {
+  font-size: 1.5rem;
+  background-color: #133009;
+  color: #ffffff;
+  transition: 0.5s;
+  font-weight: 100;
+}
 .connect2 {
-  width: 10rem;
+  font-size: 1.2rem;
+  width: 15rem;
+  height: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,33 +73,30 @@ body {
   background-color: #133009;
   overflow: hidden;
   z-index: 1;
+  color: var(--pure_white, #ffffff);
   padding: 0px 0px 0px 0px;
   align-content: center;
   flex-wrap: nowrap;
   border-radius: 16px;
-}
-.buttons{
-  display: flex;
-  gap: 4rem;
-  flex-direction: row;
+  transition: .2s;
 }
 .getintouch {
-  box-sizing: border-box;
-  width: 10rem;
-  height: 78px;
+  font-size: 1.2rem;
+  width: 15rem;
+  height: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  color: var(--dark_green, #133009);
   overflow: hidden;
   z-index: 1;
   padding: 0px 0px 0px 0px;
   align-content: center;
   flex-wrap: nowrap;
-  gap: 10;
   border-radius: 16px;
-  border: 2px solid #000000;
+  transition: .2s;
 }
 .connect2 p {
   width: auto;
@@ -88,8 +105,6 @@ body {
   font-weight: 500;
   font-style: normal;
   font-family: "Inter", "Inter Placeholder", sans-serif;
-  color: var(--pure_white, #ffffff);
-  font-size: 1.2rem;
   letter-spacing: 0em;
   line-height: 1.2;
   position: absolute;
@@ -102,8 +117,6 @@ body {
   font-weight: 700;
   font-style: normal;
   font-family: "Inter", "Inter Placeholder", sans-serif;
-  color: var(--dark_green, #133009);
-  font-size: 1.2rem;
   letter-spacing: 0em;
   line-height: 1.2;
   position: absolute;
@@ -124,46 +137,33 @@ body {
     rgba(255, 255, 255, 0.2) 4px
   );
 }
-.goal {
-  width: max-content;
-  height: 71px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  word-break: break-word;
-  z-index: 1;
-  font-family: "Gilroy-Bold ", "Gilroy-Bold  Placeholder", sans-serif;
-  color: #333333;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 1.4;
-}
 
 
 @media screen and (max-width: 768px) {
   .intro {
     width: 80%;
-    font-size: 1rem;
+    font-size: 3.5rem;
+    margin: 1.5rem;
   }
   .outer{
     gap: 3rem;
   }
   .search {
-    font-size: .8rem;
+    font-size: 1rem;
   }
   .getintouch p {
-    font-size: 1em;
+    font-size: .6em;
   }
   .connect2 p {
-    font-size: 1em;
+    font-size: .6em;
   }
   .connect2{
-    width: 8rem;
-    height:4rem;
+    width: 10rem;
+    height:3rem;
   }
   .getintouch{
-    width: 8rem;
-    height:4rem;
+    width: 10rem;
+    height:3rem;
   }
   .fake{
     height: 20rem;
