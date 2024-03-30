@@ -144,7 +144,7 @@ body {
 @media screen and (max-width: 768px) {
   .intro {
     width: 80%;
-    font-size: 3rem;
+    font-size: 1.2rem;
     margin: 1.5rem;
   }
   .buttons {
@@ -154,27 +154,34 @@ body {
     gap: 1rem;
   }
   .search {
-    font-size: 1rem;
-    font-weight: 550;
+    font-size: .7rem;
+    width: 90%;
+    margin-bottom: 1rem;
   }
   .getintouch p {
-    font-size: .6em;
+    font-size: 1rem;
     font-weight: 100;
   }
-  .connect2 p {
-    font-size: .6em;
+  .connect2 p{
+    visibility: hidden;
+  }
+  .connect2::after {
+    font-size: 1rem;
     font-weight: 100;
+    content: "Projects";
   }
   .connect2{
-    width: 10rem;
-    height:3rem;
+    width: 9rem;
+    height:2.5rem;
+    border-radius: 1rem;
   }
   .getintouch{
-    width: 10rem;
-    height:3rem;
+    width: 9rem;
+    height:2.5rem;
+    border-radius: 1rem;
   }
   .fake{
-    height: 20rem;
+    height: 15rem;
   }
   .goal {
     font-size: 1rem;

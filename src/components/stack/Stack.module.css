@@ -30,7 +30,6 @@ p {
   flex-wrap: nowrap;
   gap: 5rem;
   padding: 2rem;
-  background-color: #fffaf3;
   border-radius: 0px 0px 0px 0px;
 }
 .stack2 {
@@ -99,7 +98,7 @@ p {
   display: block;
   overflow: hidden;
   z-index: 1;
-  background-image: url(https://framerusercontent.com/images/Hz10wPumP7asJDMKpainSfJYDD4.png);
+  background-image: url(https://framerusercontent.com/images/yGdRgIRi7BYcbd8nrAoz0hCxg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -181,7 +180,7 @@ p {
   display: block;
   overflow: hidden;
   z-index: 1;
-  background-image: url(https://framerusercontent.com/images/yGdRgIRi7BYcbd8nrAoz0hCxg.jpg);
+  background-image: url(https://framerusercontent.com/images/Hz10wPumP7asJDMKpainSfJYDD4.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -214,38 +213,40 @@ p {
   }
   .frame1 {
     width: 80%;
-    height: 15rem;
+    height: 10rem;
   }
   .frame2 {
     width: 80%;
-    height: 15rem;
+    height: 10rem;
   }
   .frame3 {
     width: 80%;
-    height: 15rem;
+    height: 10rem;
   }
   .content1 {
     position: relative;
     top: 1rem;
-    left: 1rem;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 1rem;
   }
   .p11 {
-    width: 90%;
+    width: 100%;
+    text-align: center;
     font-size: 1.2rem;
   }
   .p12 {
-    width: 90%;
+    width: 70%;
+    text-align: center;
     font-size: 1rem;
   }
   .button1 {
     width: 30%;
-    height: 3rem;
+    height: 2rem;
+    border-radius: .5rem;
     gap: 10;
   }
   .btn {
@@ -261,8 +262,7 @@ p {
     display: none;
   }
   .goal{
-    font-size: 150%;
-    font-weight: 800;
+    font-size: 80%;
     height: max-content;
   }
 }

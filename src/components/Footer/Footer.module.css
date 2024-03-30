@@ -249,8 +249,9 @@
   }
   .stacks{
     height: max-content;
-    gap:0rem;
     width: 60%;
+    gap: 2rem;
+    left: 55%;
   }
   .stackout{
     width: 100%;
@@ -294,19 +295,26 @@
   }
   .mailchimp{
     display: flex;
-    flex-direction: column;
-    gap: .2rem;
+    gap: .5rem;
   }
   .mailchimp button{
     width: 20%;
     height: 1rem;
     font-size: .4rem;
-    border-radius: .3rem;
+    color: #868684;
+    border-radius: .2rem;
+  }
+  .mailchimp button::after{
+    content: "Send";
+  }
+  .mailchimp>button p{
+    display: none;
   }
   .mailchimp input{
     width: 60%;
     height: 1rem;
     font-size: .5rem;
+    border-radius: .2rem;
     border: .5rem;
     text-align: center;
   }
