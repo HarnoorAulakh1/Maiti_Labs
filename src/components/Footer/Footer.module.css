@@ -274,7 +274,7 @@
     justify-content: flex-start;
   }
   .footer{
-    height: 15rem;
+    height: 12rem;
   }
   .img{
     width: 1rem;
@@ -322,12 +322,13 @@
     width: max-content;
     height: 1rem;
     font-size: 1rem;
-    top:70%;
-    left: 25%;
+    top:80%;
+    left: 28%;
   }
   .copyright{
     font-size: .5rem;
-    top: 95%;
+    top: 90%;
+    left: 1rem;
     width: max-content;
   }
 }
